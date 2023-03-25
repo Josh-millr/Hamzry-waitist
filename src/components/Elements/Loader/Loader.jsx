@@ -13,5 +13,5 @@ export function Loader() {
     if (!loading) ref.current.complete();
   }, [loading]);
 
-  return <LoadingBar color="green" ref={ref} height={4} />;
+  return <LoadingBar color="#4ade80" ref={ref} height={4} />;
 }
