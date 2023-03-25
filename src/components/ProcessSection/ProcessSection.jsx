@@ -1,9 +1,13 @@
+import { useState, useEffect } from "react";
+
 import { Button } from "../Elements/Button/Button";
 import { ProcessCard } from "../ProcessCard/ProcessCard";
 
-import womenWithLaptop from "@/assets/images/women-with-laptop-smiling.png";
+import blackWomenWithLaptop from "@/assets/images/black-woman-with-laptop.png";
+import whiteBusinessPeople from "@/assets/images/white-business-people.png";
 
 export function ProcessSection() {
+
   return (
     <div className="mx-auto grid max-w-3xl gap-y-24 py-10">
       <div className="grid place-items-center items-center gap-y-2 text-center">
@@ -23,24 +27,24 @@ export function ProcessSection() {
         </div>
         <span className="mt-8">
           <Button type="submit">
-          <a href="#subscription_section">Joint the Waitlist</a>
+            <a href="#subscription_section">Joint the Waitlist</a>
           </Button>
         </span>
       </div>
 
       <div className="flex flex-col place-items-center gap-6 sm:flex-row">
         <ProcessCard
-          variant="fill"
+          variant={"fill"}
           type="freelancer"
-          img={womenWithLaptop}
+          img={blackWomenWithLaptop}
           imgAlt="woman with laptop"
           description="With our platform, you can sell your services as gigs or apply for projects, all while having complete control over your work schedule"
           title="Sell their service as gigs"
         />
         <ProcessCard
-          variant="stroke"
+          variant={"stroke"}
           type="Client/Business Owners"
-          img={womenWithLaptop}
+          img={whiteBusinessPeople}
           imgAlt="woman with laptop"
           description="You can use hamzry to recruit and hire top tier Nigerian talent for your long and short term projects"
           title="Find and hire the talent"

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "../Elements/Button/Button";
 import { PageMargin } from "../PageMargin/PageMargin";
 
-import womenWithLaptop from "@/assets/images/women-with-laptop-smiling.png";
+import documentRating from "@/assets/illustrations/document-rating.svg";
 
 export function FeaturesSection() {
   return (
@@ -14,7 +14,7 @@ export function FeaturesSection() {
             <Image
               fill
               className="rounded-xl"
-              src={womenWithLaptop}
+              src={documentRating}
               style={{ objectFit: "cover" }}
               alt="Women with laptop smilling"
             />

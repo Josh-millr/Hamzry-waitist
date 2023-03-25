@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import heroImage from "@/assets/images/hero-image.png";
+import womenWithLaptop from "@/assets/images/women-with-laptop-smiling.png";
 
 export function OfferingSection() {
   return (
@@ -26,7 +26,7 @@ export function OfferingSection() {
       <div className="relative order-first h-[240px] w-full sm:h-[308px] md:order-last md:w-[1400px]">
         <Image
           fill
-          src={heroImage}
+          src={womenWithLaptop}
           alt="Hero Image"
           className="rounded-[24px]"
           style={{ objectFit: "cover" }}
