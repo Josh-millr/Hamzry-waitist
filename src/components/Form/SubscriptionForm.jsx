@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect } from "react";
+
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 import { StoreContext } from "@/context/Store";
