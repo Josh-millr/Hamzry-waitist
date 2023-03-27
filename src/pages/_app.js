@@ -1,7 +1,6 @@
 import { DM_Sans } from "next/font/google";
 
 import { Store } from "@/context/Store";
-import { Footer } from "@/components/Footer/Footer";
 import { NavBar } from "@/components/NavBar/NavBar";
 import { Loader } from "@/components/Elements/Loader/Loader";
 
@@ -25,8 +24,6 @@ export default function MyApp({ Component, pageProps }) {
         <div className={`${dmSans.variable} font-sans`}>
           <Component {...pageProps} />
         </div>
-
-        <Footer />
       </Store>
     </>
   );

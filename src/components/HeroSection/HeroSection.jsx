@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useContext } from "react"; // useEffect, useRef,
 import Image from "next/image";
-import Typed from "typed.js";
+// import Typed from "typed.js";
 
 import { StoreContext } from "@/context/Store";
 
@@ -15,43 +15,43 @@ export function HeroSection() {
   const { loading } = useContext(StoreContext);
 
   // Create reference to store the DOM element containing the animation
-  const el = useRef(null);
+  // const el = useRef(null);
 
   // Create reference to store the Typed instance itself
-  const typed = useRef(null);
+  // const typed = useRef(null);
 
-  useEffect(() => {
-    const options = {
-      strings: [
-        "Design",
-        "Marketing",
-        "Writing",
-        "Translation",
-        "Video",
-        "Animation",
-        "Programming",
-        "Data Analysis",
-        "Business",
-        "Photography",
-      ],
+  // useEffect(() => {
+  //   const options = {
+  //     strings: [
+  //       "Design",
+  //       "Marketing",
+  //       "Writing",
+  //       "Translation",
+  //       "Video",
+  //       "Animation",
+  //       "Programming",
+  //       "Data Analysis",
+  //       "Business",
+  //       "Photography",
+  //     ],
 
-      startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 100,
+  //     startDelay: 300,
+  //     typeSpeed: 100,
+  //     backSpeed: 50,
+  //     backDelay: 100,
 
-      loop: true,
-      loopCount: Infinity,
-    };
+  //     loop: true,
+  //     loopCount: Infinity,
+  //   };
 
-    typed.current = new Typed(el.current, options);
+  //   typed.current = new Typed(el.current, options);
 
-    return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
-      typed.current.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Make sure to destroy Typed instance during cleanup
+  //     // to prevent memory leaks
+  //     typed.current.destroy();
+  //   };
+  // }, []);
 
   const handleEmailChange = (value) => setEmail(value);
 
@@ -73,10 +73,10 @@ export function HeroSection() {
               A marketplace for digital services
             </h1>
             <h2 className="text-center text-4xl font-bold lg:text-5xl">
-              Are you a talented freelancer? For you, we have got <br />
-              <span className="text-green-400">
+              Are you a talented freelancer? {"We’ve"} got jobs for you! <br />
+              {/* <span className="text-green-400">
                 <span ref={el}></span>Jobs!
-              </span>
+              </span> */}
              </h2>
           </div>
 
@@ -89,8 +89,8 @@ export function HeroSection() {
         </div>
 
         {/* Subscription form displayed at tab/desk view */}
-        <div className="hidden w-full md:block">
-          <div className="hidden flex-col gap-y-2 md:flex">
+        <div className="w-full md:block">
+          <div className="flex-col gap-y-2">
             <p className="mx-auto w-full max-w-md text-sm text-white">
               Join the waitlist to get notified when we launch
             </p>

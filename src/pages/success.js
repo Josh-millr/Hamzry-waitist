@@ -19,7 +19,9 @@ export default function SuccessPage() {
               <p className="text-sm uppercase text-[#108239]">
                 Email address received successfully
               </p>
-              <h1 className="text-4xl">Thank You for Joining the Waitlist</h1>
+              <h1 className="text-4xl font-bold">
+                Thank You for Joining the Waitlist
+              </h1>
             </div>
             <p className="text-base">You will be notified when we launch</p>
           </div>
@@ -30,19 +32,25 @@ export default function SuccessPage() {
             </p>
             <div className="flex gap-x-2 sm:order-last">
               {/* Facebook account link... */}
-              <a href="http://">
+              <a href="https://www.facebook.com/hamzry" target="_blank">
                 <div className="rounded-full bg-gray-700 p-2">
                   <TiSocialFacebook size={24} color="#FFFFFF" />
                 </div>
               </a>
               {/* Instagram account link... */}
-              <a href="http://">
+              <a
+                href="https://www.instagram.com/hamzrydigital/"
+                target="_blank"
+              >
                 <div className="rounded-full bg-gray-700 p-2">
                   <IoLogoInstagram size={24} color="#FFFFFF" />
                 </div>
               </a>
               {/* Linkedin account link... */}
-              <a href="http://">
+              <a
+                href="https://www.linkedin.com/company/hamzry/"
+                target="_blank"
+              >
                 <div className="rounded-full bg-gray-700 p-2">
                   <TiSocialLinkedin size={24} color="#FFFFFF" />
                 </div>
