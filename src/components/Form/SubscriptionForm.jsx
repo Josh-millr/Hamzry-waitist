@@ -40,8 +40,8 @@ function CustomForm({ value, formElements, status, onValidated }) {
 
 // Mailchimp Wrapper Form
 export function SubscriptionForm({ children, value }) {
-  let u = "5749b703f6ec75b763ba46600";
   let id = "b80962623e";
+  let u = "5749b703f6ec75b763ba46600";
 
   const postUrl = `https://hamzry.us8.list-manage.com/subscribe/post?u=${u}&id=${id}`;
 

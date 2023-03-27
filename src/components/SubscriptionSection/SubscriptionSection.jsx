@@ -8,6 +8,8 @@ import { PageMargin } from "../PageMargin/PageMargin";
 export function SubscriptionSection() {
   const [email, setEmail] = useState("");
 
+  console.log(email);
+
   const handleEmailChange = (value) => {
     setEmail(value);
   };
@@ -18,14 +20,14 @@ export function SubscriptionSection() {
           <div className="grid place-items-center text-center">
             <div className="grid gap-y-4">
               <div className="grid gap-y-2 md:gap-y-4">
-                <p className="text-xs uppercase text-[#108239] font-sans font-bold">
+                <p className="font-sans text-xs font-bold uppercase text-[#108239]">
                   {"Don't"} miss out on the opportunity
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-sans font-bold">
+                <h2 className="font-sans text-2xl font-bold sm:text-3xl">
                   Join our waitlist today
                 </h2>
               </div>
-              <p className="text-sm md:text-base font-sans">
+              <p className="font-sans text-sm md:text-base">
                 Join our vibrant community of freelancers and businesses. Join
                 our waitlist today and be the first to know when we launch!
               </p>
@@ -34,10 +36,10 @@ export function SubscriptionSection() {
 
           <div className="inline">
             <div className="flex-col gap-y-2">
-              <p className="mx-auto w-full max-w-md text-sm text-gray-600 font-sans">
+              <p className="mx-auto w-full max-w-md font-sans text-sm text-gray-600">
                 Join the waitlist to get notified when we launch
               </p>
-              <SubscriptionForm>
+              <SubscriptionForm value={email}>
                 <TextInput
                   type="email"
                   value={email}
