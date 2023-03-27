@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import { Button } from "../Elements/Button/Button";
 import { TextInput } from "../Elements/TextInput/TextInput";
 import { SubscriptionForm } from "../Form/SubscriptionForm";
 import { PageMargin } from "../PageMargin/PageMargin";
+import { StoreContext } from "@/context/Store";
 
 export function SubscriptionSection() {
   const [email, setEmail] = useState("");
+  const { loading } = useContext(StoreContext);
 
   console.log(email);
 
@@ -46,7 +48,7 @@ export function SubscriptionSection() {
                   placeholder="Enter your email"
                   onChange={handleEmailChange}
                 />
-                <Button type="submit">Join the waitlist</Button>
+                <Button type="submit" disabled={loading}>Join the waitlist</Button>
               </SubscriptionForm>
             </div>
           </div>

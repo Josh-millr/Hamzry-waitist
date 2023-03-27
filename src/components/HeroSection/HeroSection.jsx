@@ -102,7 +102,7 @@ export function HeroSection() {
                 placeholder="Enter your email"
                 onChange={handleEmailChange}
               />
-              <Button type="submit">Join the waitlist</Button>
+              <Button type="submit" disabled={loading}>Join the waitlist</Button>
             </SubscriptionForm>
           </div>
         </div>
