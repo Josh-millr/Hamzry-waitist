@@ -1,5 +1,4 @@
 import { useContext, useEffect } from "react";
-import dynamic from "next/dynamic";
 import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 
@@ -17,9 +16,13 @@ export default function SuccessPage() {
   const { setLoading, loading } = useContext(StoreContext);
 
   useEffect(() => {
-    // Track Waitlist Subscripton leading
-    console.log("Tracked new lead");
-    ReactPixel.track("Lead");
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        // Track Waitlist Subscripton leading
+        ReactPixel.track("Lead");
+      })
+      .then(() => console.log("Tracked new lead"));
   }, []);
 
   useEffect(() => setLoading(false), [setLoading]);
