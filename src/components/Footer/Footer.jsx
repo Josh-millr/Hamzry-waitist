@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { IoLogoInstagram } from "react-icons/io";
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 
@@ -30,6 +32,16 @@ export function Footer() {
         <p className="text-sm text-gray-600 sm:order-first">
           2023 © Hamzry Ltd
         </p>
+        <div className="mt-2>">
+          <Link href="/privacy">
+            <p className="text-sm text-gray-400">Privacy & Policy</p>
+          </Link>
+        </div>
+        <div className="mt-2>">
+          <Link href="/">
+            <p className="text-sm text-gray-400">Terms & Conditions</p>
+          </Link>
+        </div>
       </div>
     </PageMargin>
   );
