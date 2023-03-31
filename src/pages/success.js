@@ -1,23 +1,28 @@
 import { useContext, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { IoLogoInstagram } from "react-icons/io";
-import ReactPixel from "react-facebook-pixel";
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 
 import { StoreContext } from "@/context/Store";
 import { PageMargin } from "@/components/PageMargin/PageMargin";
 
+const ReactPixel = dynamic(
+  () => import("react-facebook-pixel").then((x) => x.default),
+  {
+    ssr: false,
+  }
+);
+
 export default function SuccessPage() {
   const { setLoading, loading } = useContext(StoreContext);
 
   useEffect(() => {
-    if (loading === true) {
-      // Track Waitlist Subscripton leading
-      ReactPixel.track("Lead");
-      console.log("Tracked new lead");
-    }
+    // Track Waitlist Subscripton leading
+    console.log("Tracked new lead");
+    ReactPixel.track("Lead");
+  }, []);
 
-    setLoading(false);
-  }, [setLoading]);
+  useEffect(() => setLoading(false), [setLoading]);
 
   return (
     <div className="bg-[#FCF5EB] ">
