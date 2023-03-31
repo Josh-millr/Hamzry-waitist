@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react";
 import { IoLogoInstagram } from "react-icons/io";
+import ReactPixel from 'react-facebook-pixel';
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 
 import { StoreContext } from "@/context/Store";
