@@ -14,8 +14,7 @@ export default function SuccessPage() {
       .then((ReactPixel) => {
         // Track Waitlist Subscripton leading
         ReactPixel.track("Lead");
-      })
-      .then(() => console.log("Tracked new lead"));
+      });
   }, []);
 
   useEffect(() => setLoading(false), [setLoading]);

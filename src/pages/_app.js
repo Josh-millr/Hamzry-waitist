@@ -28,7 +28,7 @@ export default function MyApp({ Component, pageProps }) {
         router.events.on("routeChangeComplete", () => {
           ReactPixel.pageView();
         });
-      }).then(() => console.log('Tracked Page View'));
+      });
   }, [router.events]);
 
   return (
