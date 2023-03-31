@@ -5,7 +5,7 @@ export function Button({ type, children, disabled, variant }) {
   const primaryStyle = `${
     variant === "inverse"
       ? "bg-white text-green-700 hover:bg-green-600 focus:ring-green-200"
-      : "bg-[#108239]  hover:bg-green-900 focus:ring-green-300"
+      : "bg-[#108239] text-white hover:bg-green-900 focus:ring-green-300"
   } focus:outline-none focus:ring-4 `;
 
   return (
