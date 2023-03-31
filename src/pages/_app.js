@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import { DM_Sans } from "next/font/google";
 
 import { Store } from "@/context/Store";
@@ -16,19 +16,21 @@ const dmSans = DM_Sans({
 });
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   useEffect(() => {
-    import('react-facebook-pixel')
+    import("react-facebook-pixel")
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init('763573695055805') // facebookPixelId
-        ReactPixel.pageView()
+        ReactPixel.init("763573695055805");
+        ReactPixel.pageView();
 
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
-  }, [router.events])
-  
+        router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });
+  }, [router.events]);
+
   return (
     <>
       <Store>
