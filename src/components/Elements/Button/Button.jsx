@@ -1,8 +1,11 @@
-export function Button({ type, children, disabled }) {
+export function Button({ type, children, disabled, variant }) {
   const baseStyle = `rounded-2xl px-6 py-3.5 text-sm font-medium text-white 
   w-full md:w-fit whitespace-nowrap`;
-  const primaryStyle = `bg-[#108239] hover:bg-green-900 focus:outline-none 
-  focus:ring-4 focus:ring-green-300`;
+  const primaryStyle = `${
+    variant === "inverse"
+      ? "bg-white text-green-700 hover:bg-green-600 focus:ring-green-200"
+      : "bg-[#108239]  hover:bg-green-900 focus:ring-green-300"
+  } focus:outline-none focus:ring-4 `;
 
   return (
     <button
