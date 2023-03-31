@@ -8,6 +8,10 @@ import { PageMargin } from "@/components/PageMargin/PageMargin";
 export default function SuccessPage() {
   const { setLoading } = useContext(StoreContext);
 
+  useEffect(() => {
+    ReactPixel.track('Lead') // Track Waitlist Subscripton leading
+  }, [])
+
   useEffect(() => setLoading(false), [setLoading]);
 
   return (

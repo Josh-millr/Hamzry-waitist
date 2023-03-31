@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect } from "react";
+import ReactPixel from 'react-facebook-pixel'
 
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
