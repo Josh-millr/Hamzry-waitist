@@ -1,6 +1,7 @@
 export function Button({ type, children, disabled, variant }) {
-  const baseStyle = `rounded-2xl px-6 py-3.5 text-sm font-medium text-white 
+  const baseStyle = `rounded-2xl px-6 py-3.5 text-sm font-medium
   w-full md:w-fit whitespace-nowrap`;
+
   const primaryStyle = `${
     variant === "inverse"
       ? "bg-white text-green-700 hover:bg-green-600 focus:ring-green-200"
