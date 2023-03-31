@@ -10,7 +10,9 @@ export default function SuccessPage() {
   const { setLoading } = useContext(StoreContext);
 
   useEffect(() => {
-    ReactPixel.track('Lead') // Track Waitlist Subscripton leading
+    // Track Waitlist Subscripton leading
+    ReactPixel.track('Lead')
+    console.log("Tracked new lead");
   }, [])
 
   useEffect(() => setLoading(false), [setLoading]);
