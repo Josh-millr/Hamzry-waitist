@@ -5,13 +5,6 @@ import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 import { StoreContext } from "@/context/Store";
 import { PageMargin } from "@/components/PageMargin/PageMargin";
 
-const ReactPixel = dynamic(
-  () => import("react-facebook-pixel").then((x) => x.default),
-  {
-    ssr: false,
-  }
-);
-
 export default function SuccessPage() {
   const { setLoading, loading } = useContext(StoreContext);
 
