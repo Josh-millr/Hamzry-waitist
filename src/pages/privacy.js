@@ -721,7 +721,11 @@ function Privacy() {
         </div>
 
         <ul class="grid list-disc pl-8">
-          <li>By email: info@hamzry.com</li>
+          <li>
+            <a href="mailto:info@hamzry.com" className="text-blue-600">
+              By email: info@hamzry.com
+            </a>
+          </li>
         </ul>
       </div>
     </PageMargin>
