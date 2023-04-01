@@ -6,7 +6,7 @@ import hamzryBrandLogo from "@/assets/images/logo/hamzry-full-colored.svg";
 export function NavBar() {
   return (
     <nav>
-      <div className="mx-auto items-center flex max-w-screen-lg place-content-center justify-between py-4">
+      <div className="mx-auto items-center flex max-w-screen-lg place-content-center justify-between py-4 px-6 md:py-12 lg:px-0">
         <Link href="/" className="inline">
           <Image
             height={40}
