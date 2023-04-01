@@ -43,7 +43,7 @@ function Terms() {
 
           <div className="">
             {/* bullet points  goes here... */}
-            <ul class="grid list-disc gap-y-4 pl-8">
+            <ul className="grid list-disc gap-y-4 pl-8">
               <li>
                 <b>Affiliate</b> means an entity that controls, is controlled by
                 or is under common control with a party, where {"control"} means
@@ -435,7 +435,7 @@ function Terms() {
           </div>
         </div>
 
-        <ul class="grid list-disc pl-8">
+        <ul className="grid list-disc pl-8">
           <li>
             <a href="mailto:info@hamzry.com" className="text-blue-600">
               By email: info@hamzry.com
