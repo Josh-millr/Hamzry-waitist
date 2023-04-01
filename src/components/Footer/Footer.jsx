@@ -38,7 +38,7 @@ export function Footer() {
           </Link>
         </div>
         <div className="mt-2>">
-          <Link href="/">
+          <Link href="/terms">
             <p className="text-sm text-gray-400">Terms & Conditions</p>
           </Link>
         </div>
