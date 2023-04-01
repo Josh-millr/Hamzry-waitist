@@ -36,9 +36,9 @@ export default function MyApp({ Component, pageProps }) {
       <Store>
         <Loader />
 
-        <NavBar />
-
         <div className={`${dmSans.variable} font-sans`}>
+          <NavBar />
+
           <Component {...pageProps} />
         </div>
       </Store>

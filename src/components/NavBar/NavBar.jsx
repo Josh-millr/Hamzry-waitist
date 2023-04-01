@@ -6,7 +6,7 @@ import hamzryBrandLogo from "@/assets/images/logo/hamzry-full-colored.svg";
 export function NavBar() {
   return (
     <nav>
-      <div className="mx-auto flex max-w-screen-lg place-content-center py-4">
+      <div className="mx-auto items-center flex max-w-screen-lg place-content-center justify-between py-4">
         <Link href="/" className="inline">
           <Image
             height={40}
@@ -15,6 +15,9 @@ export function NavBar() {
             alt="hamzry brand logo"
           />
         </Link>
+        <a href="mailto:info@hamzry.com" className="">
+          Contact Us
+        </a>
       </div>
     </nav>
   );
