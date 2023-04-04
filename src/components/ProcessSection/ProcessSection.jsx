@@ -27,7 +27,7 @@ export function ProcessSection() {
         </div>
         <span className="mt-8">
           <Button type="submit">
-            <a href="#subscription_section">Joint the Waitlist</a>
+            <a href="#subscription_section">Join the Waitlist</a>
           </Button>
         </span>
       </div>

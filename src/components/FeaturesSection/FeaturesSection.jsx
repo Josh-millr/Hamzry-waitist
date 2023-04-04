@@ -26,7 +26,7 @@ export function FeaturesSection() {
               users succeed
             </p>
             <Button type="button" variant="inverse">
-              <a href="#subscription_section">Joint the Waitlist</a>
+              <a href="#subscription_section">Join the Waitlist</a>
             </Button>
           </div>
         </div>

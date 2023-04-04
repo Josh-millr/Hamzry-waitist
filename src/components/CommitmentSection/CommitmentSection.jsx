@@ -19,7 +19,7 @@ export function CommitmentSection() {
         </h1>
       </div>
       <Button type="button">
-      <a href="#subscription_section">Joint the Waitlist</a>
+      <a href="#subscription_section">Join the Waitlist</a>
       </Button>
     </div>
   );
